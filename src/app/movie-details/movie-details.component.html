@@ -1,0 +1,35 @@
+<div class="wrapper">
+  <div class="movie-title">
+    <h2 *ngIf="movie.title">{{ movie.title }}</h2>
+  </div>
+
+  <div>
+    <div class="panel panel-default">
+
+      <div class="panel-body">
+        <div class="row">
+          <div class="image-container col-md-5" style="text-align: center;">
+            <img *ngIf="movie.poster_path" class="image-detail"
+              src="http://image.tmdb.org/t/p/w500/{{movie.poster_path}}">
+            <img *ngIf="!movie.poster_path" src="../../assets/image-not-available.png">
+          </div>
+          <div class="movie-card col-md-7">
+            <ul class="list-group">
+              <li class="list-group-item">Title: {{ movie.title }}</li>
+              <li class="list-group-item">Genres: <span *ngFor="let genre of movie.genres"
+                  class="label label-info m-r-md">{{ genre.name }}</span></li>
+              <li class="list-group-item">Release Date: {{ movie.release_date }}</li>
+              <li class="list-group-item">Rating: {{ movie.vote_average }}</li>
+              <li class="list-group-item">Summary {{ movie.overview }}</li>
+            </ul>
+            <br>
+            <p> <a *ngIf="movie.homepage" href="{{ movie.homepage }}" target="_blank" class="btn btn-default">Visit
+                Movie
+                Website</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

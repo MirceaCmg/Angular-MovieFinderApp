@@ -1,0 +1,72 @@
+.searchBar{
+  margin-top: 2rem;
+  height: 5rem;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #BFC9CA;
+  color: #BFC9CA;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+input, input::placeholder {
+  color: #BFC9CA;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.7rem;
+}
+
+.btn {
+  margin-top: 10px;
+  color: #BFC9CA;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: transparent;
+  padding: 10px;
+  border: 2px solid #BFC9CA !important;
+  display: inline-block;
+  font-family: 'Courier New', Courier, monospace;
+  transition: all 0.4s ease 0s;
+}
+
+.btn:hover {
+  color: #222;
+  background: #BFC9CA;
+  transition: all 0.4s ease 0s;
+}
+
+.card-deck {
+  justify-content: space-between;
+  color: #BFC9CA;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h4 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+#view-detail-btn {
+  margin-bottom: 5px;
+}
+
+@media(max-width: 768px) {
+  .searchBar {
+    margin-top: 2rem;
+    height: 6rem;
+  }
+  input, input::placeholder {
+    font-size: 1.2rem;
+  }
+  .row1 {
+    height: 7rem;
+  }
+}
+
+
+@media(max-width: 360px) {
+  input, input::placeholder {
+    font-size: 0.7rem;
+  }
+}

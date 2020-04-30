@@ -1,0 +1,28 @@
+.container {
+  margin-top: 60px;
+}
+
+.navbar {
+  background:transparent;
+  border: none;
+}
+
+.navbar-brand {
+  color: #BFC9CA;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: transparent;
+  padding: 10px;
+  border: 2px solid #BFC9CA !important;
+  display: inline-block;
+  font-family: 'Courier New', Courier, monospace;
+  transition: all 0.4s ease 0s;
+}
+
+.navbar-brand:hover {
+  color: #222;
+  background: #BFC9CA;
+  transition: all 0.4s ease 0s;
+}
+
+
